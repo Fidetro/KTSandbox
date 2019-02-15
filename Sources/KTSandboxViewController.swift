@@ -99,9 +99,9 @@ class KTSandboxViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
         if #available(iOS 11.0, *) {
-            activityVC.excludedActivityTypes = [.mail,.markupAsPDF,.saveToCameraRoll,.copyToPasteboard]
+            activityVC.excludedActivityTypes = [.mail,.markupAsPDF,.saveToCameraRoll,.copyToPasteboard,.airDrop]
         } else {
-            activityVC.excludedActivityTypes = [.mail,.saveToCameraRoll,.copyToPasteboard]
+            activityVC.excludedActivityTypes = [.mail,.saveToCameraRoll,.copyToPasteboard,.airDrop]
         }
         present(activityVC, animated: true, completion: nil)
     }
