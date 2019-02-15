@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.name         = "SwiftFFDB"
+  s.name         = "KTSandbox"
   s.version      = "0.0.1"
   s.summary      = "iOS sandbox debug tool."
   s.homepage     = "https://github.com/Fidetro/KTSandbox"
