@@ -116,6 +116,9 @@ extension KTSandboxViewController {
         
         tableView.frame = CGRect(x: leftSpace, y: topSpace, width: UIScreen.main.bounds.size.width-leftSpace*2.0, height: UIScreen.main.bounds.size.height-topSpace*2.0)
         view.addSubview(tableView)
+        let whiteView = UIView.init(frame: CGRect.init(x: leftSpace, y: topSpace-30.0, width: UIScreen.main.bounds.size.width-leftSpace*2.0, height: 30))
+        whiteView.backgroundColor = .white
+        view.addSubview(whiteView)
         closeBtn.frame = CGRect.init(x: 0, y: topSpace-30.0, width: leftSpace, height: 30)
         closeBtn.frame.origin.x = UIScreen.main.bounds.size.width-leftSpace*2.0
         view.addSubview(closeBtn)
