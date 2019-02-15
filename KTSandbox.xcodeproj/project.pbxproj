@@ -122,7 +122,7 @@
 		9A51355A2216A55700135E9C /* KTSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				9A5135892216A57100135E9C /* Source */,
+				9A5135892216A57100135E9C /* Sources */,
 				9A51355B2216A55700135E9C /* AppDelegate.swift */,
 				9A51355D2216A55700135E9C /* ViewController.swift */,
 				9A51355F2216A55700135E9C /* Main.storyboard */,
@@ -151,7 +151,7 @@
 			path = KTSandboxUITests;
 			sourceTree = "<group>";
 		};
-		9A5135892216A57100135E9C /* Source */ = {
+		9A5135892216A57100135E9C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				9A5135902216BEB200135E9C /* String+Extension.swift */,
@@ -160,7 +160,8 @@
 				9A51358E2216B39400135E9C /* KTSandboxTableViewCell.swift */,
 				9A5135922216C47C00135E9C /* KTSandboxViewModel.swift */,
 			);
-			path = Source;
+			name = Sources;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 		CC04780A012D77F745AD55A0 /* Pods */ = {
