@@ -1,0 +1,6 @@
+framework module Pods_KTSandbox {
+  umbrella header "Pods-KTSandbox-umbrella.h"
+
+  export *
+  module * { export * }
+}
