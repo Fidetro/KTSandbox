@@ -93,16 +93,11 @@ class KTSandboxViewController: UIViewController,UITableViewDelegate,UITableViewD
         var items = [URL]()
         
         for file in selectFiles {
-           let url = URL(fileURLWithPath: file)
+            let url = URL(fileURLWithPath: rootPath + "/" + file)
             items.append(url)
         }
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        if #available(iOS 11.0, *) {
-            activityVC.excludedActivityTypes = [.mail,.markupAsPDF,.saveToCameraRoll,.copyToPasteboard,.airDrop]
-        } else {
-            activityVC.excludedActivityTypes = [.mail,.saveToCameraRoll,.copyToPasteboard,.airDrop]
-        }
         present(activityVC, animated: true, completion: nil)
     }
     
